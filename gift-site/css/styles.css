@@ -1,0 +1,346 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container-fluid {
+  padding: 4% 12% 15%;
+}
+
+/*===========================================================================1st page===============================================================================*/
+/*----------------------------------navbar--------------------------*/
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.nav-item {
+  padding: 2px 5px 5px ;
+}
+
+.nav-link {
+  font-family: 'Montserrat-light', sans-serif;
+  font-size: 1.2rem;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.fa-regular{
+  width: 50%;
+}
+
+.logo-img{
+  width:6%;
+  padding-left: 0 10px 0 0;
+}
+
+/*-------------------------------search bar---------------------------*/
+.search-bar{
+  width:70%;
+  max-width: 700px;
+  background: rgba(255,255,255,0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 5px 20px;
+}
+
+.search-bar input{
+  background: transparent;
+  flex:1;
+  border: 0;
+  outline: none;
+  font-size: 20px;
+  color: #cac7ff;
+}
+.search-bar button{
+  background: transparent;
+  border: none;
+}
+
+/*--------------------------title and img----------------------------*/
+
+#title{
+  background-color:#2B4865;
+  text-align: left;
+}
+
+.title-img {
+  width: 55%;
+  position: absolute;
+  right: 30%;
+}
+
+.gift-2{
+  width: 70%;
+  position: absolute;
+  left: 47%;
+  transform: rotate(29deg);
+}
+
+.title-img-div {
+  position: relative;
+}
+.banner-text1{
+  color:#7DE5ED;
+  /*padding-bottom:3px;*/
+}
+.banner-text2 {
+  font-size: 3.5rem;
+  line-height: 1.5;
+  color: white;
+}
+
+
+/*=======================================================================category section====================================================================*/
+#categories{
+ padding: 8% 10%;
+  background-color: #FFF6BF;
+  position: relative;
+}
+
+.category-box{
+  padding: 5%;
+}
+
+.feature-title{
+  margin-right: 11.8%;
+   line-height: 3;
+   text-align: center;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+.feature-title {
+  color: #000;
+  font-size: 1.5rem;
+}
+/* =========================================================(carousal)======================================================================*/
+
+.first{
+  background-color: #D3BFB9;
+  padding-left: 30px;
+  padding-right: 5px;
+}
+.second{
+  background-color: #000;
+    padding-top: 20px;
+    padding-bottom:20px;
+}
+.third{
+  background-color: #630606;
+  padding-left: 50px;
+  padding-right: 5px;
+}
+.carousel-item{
+  position: relative;
+  text-align: left;
+}
+.cake-1{
+  width: 50%;
+}
+.img-1{
+  width: 56%;
+}
+.img-2{
+  width:56%;
+}
+.img-3{
+  position: absolute;
+  left: 63%;
+  top: 40px;
+  width: 33%;
+}
+.one-t{
+  position: absolute;
+  left:40%;
+  font-size: 4rem;
+  line-height: 1.5;
+  bottom: 300px;
+  font-family: 'Montserrat', sans-serif;
+}
+.two-t{
+  color:#FFC000;
+  position: absolute;
+  top:20%;
+  left:50%;
+  font-size: 4.5rem;
+  line-height: 1.5;
+  bottom: 350px;
+font-family: 'Dancing Script', cursive;
+}
+.three-t{
+  color:#fff;
+  position: absolute;
+  left:50%;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  bottom: 260px;
+font-family: 'Fredericka the Great', cursive;
+}
+.four-t{
+  color:#FFC000;
+  position: absolute;
+  left:50%;
+  line-height: 1.5;
+  bottom: 230px;
+}
+/*
+font-family: 'Arizonia', cursive;
+font-family: 'Oleo Script', cursive;
+font-family: 'Berkshire Swash', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Rochester', cursive;
+font-family: 'Rouge Script', cursive;
+
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Cabin Sketch', cursive;
+font-family: 'Sail', cursive; */
+
+
+.btn1{
+  position: absolute;
+  left: 40%;
+  bottom: 230px;
+}
+.btn2{
+  position: absolute;
+  left: 50%;
+  bottom: 180px;
+}
+
+
+/*=======================================================================flip card-section====================================================================*/
+
+/* Visit https://nicolaskadis.info/posts/pure-css-flip-cards-using-bootstrap-4-and-css-grid-no-js for an explanation */
+
+
+.card {
+  margin: 10px 10px;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+/* Flip Cards CSS */
+.card-container {
+  display: grid;
+  perspective: 700px;
+}
+
+.card-flip {
+  display: grid;
+  grid-template: 1fr / 1fr;
+  grid-template-areas: "frontAndBack";
+  transform-style: preserve-3d;
+  transition: all 0.7s ease;
+}
+
+.card-flip div {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.front {
+  grid-area: frontAndBack;
+}
+
+.back {
+  grid-area: frontAndBack;
+  transform: rotateY(-180deg);
+}
+
+input[type='checkbox']:checked + .card-container .card-flip {
+  transform: rotateY(180deg);
+}
+
+/*=========================================================================footer section====================================================================*/
+#footer {
+  background-color: #8BBCCC;
+  padding: 7% 44%;
+}
+
+.footer-download-buttons {
+  margin: 3% 3% 3% 0;
+}
+
+.social-icons {
+  margin: 20px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===========================================================================button design================================================================================*/
+.btn1{
+  -webkit-border-radius: 24;
+  -moz-border-radius: 24;
+  border-radius: 24px;
+  text-shadow: 2px 3px 5px #000000;
+  -webkit-box-shadow: 2px 3px 4px #1a181a;
+  -moz-box-shadow: 2px 3px 4px #1a181a;
+  box-shadow: 2px 3px 4px #1a181a;
+  font-family: Arial;
+  color: #ffff;
+  font-size: 19px;
+  background: #850E35;
+  padding: 10px 17px 10px 17px;
+  text-decoration: none;
+}
+
+.btn1:hover {
+  background: #B93160;
+  text-decoration: none;
+}
+
+.btn2{
+  -webkit-border-radius: 24;
+  -moz-border-radius: 24;
+  border-radius: 24px;
+  text-shadow: 0 0 0 #000000;
+  -webkit-box-shadow: 2px 3px 4px #524c52;
+  -moz-box-shadow: 2px 3px 4px #524c52;
+  box-shadow: 2px 3px 4px #524c52;
+  font-family: Arial;
+  color: #000;
+  font-size: 19px;
+  background: #FFC000;
+  padding: 10px 17px 10px 17px;
+  text-decoration: none;
+}
+
+.btn2:hover {
+  background: #F2D388;
+  text-decoration: none;
+}
